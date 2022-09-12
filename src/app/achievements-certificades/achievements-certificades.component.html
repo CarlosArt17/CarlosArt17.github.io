@@ -1,0 +1,20 @@
+<h3>Certificados</h3>
+<ul *ngFor = "let ct of certificado">
+    <tr>
+        <li>
+            <tr>
+                <td>{{ ct.Nom_cert}}</td>
+                <td>{{ ct.fecha }}</td>
+            </tr>
+        </li>
+        
+        <ul *ngFor = "let des of ct.Des_cert">
+        <li>
+            <tr>
+                {{des.Descripccion}}
+                
+            </tr>
+        </li>
+    </ul>
+</tr>
+</ul>
